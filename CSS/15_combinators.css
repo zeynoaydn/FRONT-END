@@ -1,0 +1,7 @@
+div ~ p{
+    background-color: wheat;
+    padding: 5px;
+}
+/* +=div in dışınndaki ilk veriye işlem uyguluyor */
+/* ~=div in dışındaki sonraki verilere işlem uyguluyor */
+/* + */

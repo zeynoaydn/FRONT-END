@@ -1,0 +1,7 @@
+.style-list-ul{
+    list-style-type:circle;
+}
+.style-list-ol{
+    list-style-type:lower-alpha;
+    list-style-position: inside;
+}

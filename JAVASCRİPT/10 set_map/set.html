@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const names=new Set(['zeynep','bihter','yağmur']);
+        // for(let name of names){
+        //     console.log('ad:',name)
+        // }
+        names.forEach(name=>console.log('ad:'+name));
+
+        // [...names].map(name=>console.log('map ad:'+name));
+
+        names.add('canan');
+        console.log(names);
+
+        const nameSet=new Set();
+        for(let name of names){
+            nameSet.add(name)
+        };
+        console.log(nameSet);
+
+        names.delete('bihter');
+        console.log(names);
+
+        deneme=names.has('bihter');
+        console.log(deneme);
+
+        const names2=new Set(['zeynep','bihter','yağmur','zeynep','bihter','yağmur']);
+        console.log(names2);
+        boyut=names2.size;
+        console.log(boyut);
+        names2.add('zeynep');
+        console.log(names2);
+
+        const denemeler=['zeynep','bihter','yağmur','zeynep','bihter','yağmur'];
+        console.log(new Set(denemeler));
+
+        const languages=[
+            'english',
+            'finnish',
+            'english',
+            'french',
+            'french',
+            'spanish',
+            'turkish',
+            'turkish',
+            'finland'
+        ];
+        const langSet=new Set(languages);
+        console.log(langSet);
+
+        console.log(langSet.size);
+
+        const counts=[];
+
+        for(let l of langSet){
+            const filterLang=languages.filter(lng=>lng==l)
+            console.log(filterLang);
+
+            counts.push({
+                languages:l,
+                count:filterLang.length,
+            })
+        }
+        console.log(counts);
+
+        let a=[1,2,3,4,5];
+        let b=[3,4,5,6];
+        let c=[...a,...b];
+
+        let A=new Set(a);
+        let B=new Set(b);
+        let C=new Set(c);
+        console.log(C);
+        console.log(c);
+
+        let d=a.filter((num)=>B.has(num))
+        console.log(d);
+
+        let e=a.filter((num)=>!B.has(num))
+        console.log(e);
+
+
+    </script>
+</body>
+</html>

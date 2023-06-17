@@ -1,0 +1,33 @@
+.container{
+    width: 900;
+    height: 900px;
+    background-color: rgb(183, 179, 179);
+}
+#box1{
+    background-color: rgb(218, 129, 129);
+    height: 150px;
+    width: 150px;
+}
+#box2{
+    background-color: rgb(144, 144, 219);
+    height: 150px;
+    width: 150px;
+    /* position: relative;
+    left: 30px;
+    top: 30px; */
+}
+#box3{
+    background-color: rgb(141, 223, 141);
+    height: 150px;
+    width: 150px;
+}
+#box4{
+    background-color: rgb(222, 222, 134);
+    height: 150px;
+    width: 150px;
+}
+#box5{
+    background-color: rgb(215, 147, 215);
+    height: 150px;
+    width: 150px;
+}

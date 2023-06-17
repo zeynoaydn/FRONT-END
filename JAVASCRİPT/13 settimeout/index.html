@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //setTimeOut=belirlenen süre zarfından sonra bir kere çalışır
+        //setInterval=belli süre aralıklarında sürekli çalışır
+
+        // const setAyar=setTimeout(() => {
+        //     console.log("yükleniyor...");
+        // }, 2000);
+        const setAyar=setTimeout(yuklendi,2000);
+        function yuklendi(){
+            console.log("yükleniyor....");
+        };
+        clearTimeout(setAyar);
+        //clear ile setAyar ı iptal ettik
+
+        const setAyar2=setInterval(yuklendi,2000);
+        function yuklendi(){
+            console.log("yükleniyor....");
+        };
+        clearInterval(setAyar2);
+
+        const saat=setInterval(saatFunc,2000);
+        function saatFunc(){
+            const a=new Date();
+            const b=a.toLocaleTimeString();
+            //tarayıcı lokasyonuna göre zaman bilgisini aldık
+            console.log(b);
+            document.body.innerHTML=b;
+        }
+    </script>
+</body>
+</html>

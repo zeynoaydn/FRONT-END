@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ogrenciler=["zeynep","bihter","yağmur"];
+        sonuc=ogrenciler.join(" ");
+        sonuc=ogrenciler.pop();//son eleman siliner ve silinen elemean yazılır
+        sonuc=ogrenciler.shift()//ilk eleman silinir
+        sonuc=ogrenciler.push("zeze"); //listenin sonuna eleman ekler
+        sonuc=ogrenciler.unshift("zeze");//listenin başına eleman ekler
+
+        let marka1=["a","b"];
+        let marka2=["c","d"];
+        let marka3=["e","f"];
+        sonuc2=marka1.concat(marka2);
+        console.log(sonuc2);
+
+        sonuc3=marka3.splice(0,1,"h");
+        console.log(sonuc3);
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- koşula uygun ilk elemanı bulur -->
+    <script>
+        const numbers=[54,12,3,463,226];
+        console.log(numbers.find(number=>number>10));
+
+        const numbers2=[4,12,3,463,226];
+        console.log(numbers2.find(number2=>number2>10));
+
+        const users=[
+            {
+                name:"zeynep",
+                id:171,
+            },
+            {
+                name:"bihter",
+                id:32,
+            },
+            {
+                name:"yagmur",
+                id:76,
+            },
+        ];
+        const foundUSer=users.find(function(user){
+            return user.id==171;
+        });
+        console.log(foundUSer);
+        // console.log(users.find(user=>user.id==171));
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const urunler=[
+            {id:1,name:"kalem",fiyat:12},
+            {id:2,name:"silgi",fiyat:23},
+            {id:3,name:"defter",fiyat:1},
+            {id:4,name:"uhu",fiyat:5},
+        ];
+        const toplamFiyat=urunler.reduce((toplam,urun)=>toplam=toplam+urun.fiyat,0);
+        console.log(toplamFiyat)
+    </script>
+</body>
+</html>

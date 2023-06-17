@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <table id="kitapListesi">
+        <tr>
+            <td>kitap adı</td>
+            <td>yazar</td>
+            <td>fiyat</td>
+            <td>baskı</td>
+        </tr>
+    </table>
+    <script>
+        let bilgiler={
+            "marka":"iphone",
+            "model":"se",
+            "fiyat":1234,
+            "renk":["siyah","kırmızı","gold"],
+            "kamera":{
+                "on":8,
+                "arka":14,
+            },
+            "stok":true,
+            "firma":null,
+        }
+
+        let deneme={
+            "okul":"kmü",
+            "bolum":"mühendislik",
+            "ogrenciler":[
+                {
+                    "adSoyad":"zeynep aydın",
+                    "numara":171,
+                },
+                {
+                    "adSoyad":"bihter uysal",
+                    "numara":121,
+                },
+            ]
+        }
+
+        // var kitap={
+        //     "kitapAdi":"hamlet",
+        //     "yazar":"sheakespare",
+        //     "fiyat":12,
+        //     "baski":1560,
+        // };
+        // var jsonVeri=JSON.stringify(kitap);
+        // var veri=JSON.parse(jsonVeri);
+        // alert(veri.kitapAdi);
+
+        $(document).ready(function(){
+            var kitaplar=[
+            {
+            "kitapAdi":"romeo ve juliet",
+            "yazar":"sheakespare",
+            "fiyat":23,
+            "baski":1560
+            },
+            {
+            "kitapAdi":"kral lear",
+            "yazar":"sheakespare",
+            "fiyat":16,
+            "baski":1522
+            },
+            {
+            "kitapAdi":"fırtına",
+            "yazar":"sheakespare",
+            "fiyat":45,
+            "baski":1432
+            },
+        ];
+        var jsonVeri2=JSON.stringify(kitaplar);
+        var veri2=JSON.parse(jsonVeri2);
+
+        alert(veri2[1].kitapAdi);
+
+        for(var i=0;i<veri2.length;i++){
+            var satir="<tr>";
+            satir+="<td>"+veri2[i].kitapAdi+"</td>";
+            satir+="<td>"+veri2[i].yazar+"</td>";
+            satir+="<td>"+veri2[i].fiyat+"</td>";
+            satir+="<td>"+veri2[i].baski+"</td>";
+            satir+="</tr>";
+            $("#kitapListesi").append(satir);
+        }
+        })
+    </script>
+</body>
+</html>

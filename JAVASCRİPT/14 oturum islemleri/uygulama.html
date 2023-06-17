@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" id="input_1">
+        <input type="submit" id="input_2" value="oturum ekle">
+    </form>
+    <script>
+        const input=document.querySelector("#input_1");
+        const submiBtn=document.querySelector("#input_2");
+        submiBtn.addEventListener("click",function(e){
+            const inputValue=input.value;
+            // console.log(inputValue);
+            // localStorage.setItem("oturum",inputValue);
+            let oturumDizisi;
+            if(localStorage.getItem("oturum")===null){
+                oturumDizisi=[];
+            }
+            else{
+                oturumDizisi=JSON.parse(localStorage.getItem("oturum"));
+            }
+            oturumDizisi.push(inputValue);
+            localStorage.setItem("oturum",JSON.stringify(oturumDizisi));
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>

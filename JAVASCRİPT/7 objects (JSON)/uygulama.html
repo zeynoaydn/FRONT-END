@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+    1- Sipariş bilgilerini object içerisinde saklayınız.
+    2- Her siparişin ayrı ayrı kdv dahil toplam ödenen ücretini hesaplayınız. (kdv: %18)
+    3- Tüm siparişlerin kdv dahil toplam ödenen ücretini hesaplayınız.
+
+    sipariş id: 101
+    sipariş tarihi: 31.12.2022
+    ödeme şekli: kredi kartı
+    kargo adresi: Yahya kaptan mah. Kocaeli İzmit
+    satın alınan ürünler: 
+        ürün id: 5
+        ürün başlığı: IPhone 13 Pro
+        ürün url: http://abc.com/iphone-13-pro
+        ürün fiyatı: 22000
+
+        ürün id: 6
+        ürün başlığı: IPhone 13 Pro Max
+        ürün url: http://abc.com/iphone-13-pro-max
+        ürün fiyatı: 25000
+
+    müşteri:
+        müşteri id: 12
+        
+    satıcı:
+        firma id: 34
+        firma adı: Apple Türkiye
+
+    sipariş id: 102
+    sipariş tarihi: 30.12.2022
+    ödeme şekli: kredi kartı
+    kargo adresi: Yahya kaptan mah. Kocaeli İzmit
+    satın alınan ürünler: 
+
+        ürün id: 6
+        ürün başlığı: IPhone 13 Pro Max
+        ürün url: http://abc.com/iphone-13-pro-max
+        ürün fiyatı: 25000
+
+    müşteri:
+        müşteri id: 12
+        
+    satıcı:
+        firma id: 34
+        firma adı: Apple Türkiye
+
+*/
+    let siparis1={
+        "siparisID":101,
+        "siparisTarihi":31/12/2022,
+        "odemeSekli":"kredi kartı",
+        "kargoAdres":{
+            "mahalle":"yahya kemal",
+            "ilce":"izmit",
+            "sehir":"kocaeli"
+        },
+        "satınAlinanUrunler":[
+            {
+            "urunBasligi":"iphone 13 pro",
+            "urunURL":"http://abc.com/iphone-13-pro",
+            "urunFiyat":22000,
+            },
+            {
+            "urunBasligi":"iphone 13 pro",
+            "urunURL":"http://abc.com/iphone-13-pro",
+            "urunFiyat":25000,
+            },
+        ],
+        "musteri":12,
+        "satici":{
+            "firmaID":34,
+            "firmaAdi":"apple Türkiye"
+        }
+    }
+
+    let siparis2={
+        "siparisID":101,
+        "siparisTarihi":31/12/2022,
+        "odemeSekli":"kredi kartı",
+        "kargoAdres":{
+            "mahalle":"yahya kemal",
+            "ilce":"izmit",
+            "sehir":"kocaeli"
+        },
+        "satınAlinanUrunler":[{
+            "urun_id": 6,
+            "urunBasligi":"iphone 13 pro",
+            "urunURL":"http://abc.com/iphone-13-pro",
+            "urunFiyat":25000,
+            
+        }],
+        "musteri":12,
+        "satici":{
+            "firmaID":34,
+            "firmaAdi":"apple Türkiye"
+        }
+    }
+    
+    let toplam=(siparis1.satınAlinanUrunler[0].urunFiyat+siparis1.satınAlinanUrunler[1].urunFiyat)*0.18;
+    let toplam2=(siparis2.satınAlinanUrunler[0].urunFiyat)*0.18;
+    console.log(toplam);
+    console.log(toplam2);
+    console.log(toplam+toplam2);
+    let siparisler={siparis1,siparis2};
+    console.log(siparisler);
+   </script>
+</body>
+</html>

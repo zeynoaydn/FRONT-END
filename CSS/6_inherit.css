@@ -1,0 +1,13 @@
+.special{
+    padding: 15px;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-left: 50px;
+    /* margin: auto; */
+}
+.sub-special{
+    margin-left: inherit;
+    border:inherit;
+    /* inherit:miras alır,
+    yukarıdan nesneden(parent) miras alır*/
+}

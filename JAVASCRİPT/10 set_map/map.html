@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const map=new Map();
+        map.set('name','zeynep');
+        map.set(Boolean,false);
+        console.log(map);
+
+        const obj={};
+        obj['name']='tayfun';
+        obj[1]='ahmet';
+        console.log(obj);
+
+        const deneme=new Map();
+        map.set('1','str');
+        map.set(1,'mun1');
+        map.set(true,'bool1');
+        map.set(false,'bool2');
+        console.log(map.get(true));
+
+        const dem={};
+        obj['1']='zeynep';
+        obj[1]='zeynep';
+        console.log(dem);
+
+        const zeynep={
+            name:'zeynep'
+        }
+        const bihter={
+            name:'bihter'
+        }
+        const kuzen=new Map();
+        kuzen.set(zeynep,10);
+        kuzen.set(bihter,20);
+        console.log(kuzen.size);
+        console.log(kuzen);
+        zeynep.surname='aydın';
+        for(let u of kuzen.entries()){
+            console.log(u);
+        }
+
+        const yagmur={
+            name:'yagmur',
+            surname:'uysal'
+        };
+        //yagmur değişkenini yagmur2 gibi yazdırmak için 
+        // console.log(Object.entries(yagmur));
+        const newYagmur=new Map(Object.entries(yagmur));
+        console.log(newYagmur);
+        const yagmur2=new Map([
+            ['name2','yagmur'],
+            ['surname2','uysal'],
+        ]);
+    </script>
+</body>
+</html>

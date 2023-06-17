@@ -1,0 +1,58 @@
+.special-link:link{
+    color: red;
+}
+.special-link:visited{
+    color: purple;
+}
+.special-link:hover{
+    color: green;
+}
+.special-link:active{
+    color: brown;
+}
+.pseudo p{
+    background-color: antiquewhite;
+    padding: 10px;
+    width: 15%;
+    display: none;
+}
+div:hover p{
+    display: block;
+}
+#username{
+    border: 2px solid black ;
+    padding: 9px;
+    width: 20%;
+}
+#username:focus{
+    background-color: olivedrab;
+    color: wheat;
+}
+/* p:first-child{
+    color: blue;
+/* } /* çalışmıyor */
+li:first-child{
+    color: red;
+}
+/* .last-li b:first-child{
+    color: red;
+} */
+.last-li:first-child b{
+    color: red;
+}
+#check:checked{
+    border-image-width: 300px;
+    height: 300px;
+}
+input[type="text"]:enabled{
+    background-color: olive;
+    padding: 10px;
+    color: black;
+    width: 20%;
+}
+#eposta:invalid{
+    border: 2px solid red;
+    padding: 10px;
+    width: 20%;
+    /* @gmail.com girilene kadar karşıya uyarı verilecek */
+}

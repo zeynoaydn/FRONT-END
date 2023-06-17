@@ -1,0 +1,27 @@
+h2{
+    text-align: center;
+}
+.change{
+    border: 1px solid black;
+    background-color: antiquewhite;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+#second{
+    border: 1px solid black;
+    background-color: rgb(178, 142, 211);
+    padding: 10PX;
+}
+/*
+MARGIN=DIŞ BOŞLUK
+PADDIING=İÇ BOŞLUK
+*/
+
+.link a{
+    color: red;
+    text-decoration: none;
+}
+.link a:hover{
+    color: aqua;
+    text-decoration: underline;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-header">
+        <h3 class="card-title h1" id="title">ToDo App</h3>
+    </div>
+    <ul id="task-list">
+        <li class="task">görev 1</li>
+        <li class="task">görev 2</li>
+        <li class="task">görev 3</li>
+    </ul>
+    <ul id="task-list2">
+        <li class="task">görev 4</li>
+        <li class="task">görev 5</li>
+        <li class="task">görev 6</li>
+    </ul>
+    <script>
+        let sonuc;
+
+        sonuc=document.getElementsByClassName("task")[1];
+        //task class ına index numarası ile erişebilirsin
+
+        sonuc=document.getElementsByClassName("task");
+        //task class ındaki tüm elemanlara erişebilirsin
+
+        sonuc=document.getElementsByTagName("li");
+        //tüm li taglarına erişim sağlar
+
+        // ul=document.getElementById("task-list");
+        // taskList=ul.getElementsByTagName("li");
+        //teker teker yazmak  yerine bunu queryselectorall ile hepsine erişebilirsin
+        taskList=document.querySelectorAll("#task-list li");
+
+        // for(let i=0;i<taskList.length;i++){
+        //     console.log(taskList[i]);
+        // }
+        // for(let task of taskList){
+        //     console.log(task);
+        // }
+        for(let task of taskList){
+            task.style.color="red";
+        }
+
+        console.log(sonuc);
+        console.log(taskList);
+    </script>
+</body>
+</html>

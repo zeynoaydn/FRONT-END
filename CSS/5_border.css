@@ -1,0 +1,36 @@
+p{
+    padding: 20px;
+}
+.border-main{
+    border: 2px solid ;
+    border-color: red green blue purple;
+    /* border-radius: 20px; */
+    border-top-left-radius: 20px;
+}
+.border-dashed{
+    border-style: dashed;
+}
+.border-dotted{
+    border-style: dotted;
+}
+.border-double{
+    border-style: double;
+}
+.border-hidden{
+    border-style: hidden;
+}
+.border-inset{
+    border-style: inset;
+}
+.border-outset{
+    border-style: outset;
+}
+.border-solid{
+    border-style: solid;
+}
+.border-none{
+    border-style: none;
+}
+.border-ridge{
+    border-style: ridge;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function selamla(){
+            console.log("merhaba");
+        }
+        selamla();
+
+        function selamlaa(msg){
+            console.log(msg);
+        }
+        selamlaa("selam mudo ben kelebek");
+
+        function yasHesapla(dogumYili){
+            console.log(new Date().getFullYear()-dogumYili);
+        }
+        yasHesapla(2001);
+
+        // 1- Kendisine gönderilen kelimeyi belirtilen kez ekranda yazan fonksiyonu yapınız.
+        function words(kelime,adet){
+            for(i=0;i<adet;i++){
+                console.log(kelime);
+            }
+        }
+        words("merhaba",5);
+
+        // 2- Dikdörtgenin alan ve çevresini hesaplayan fonksiyonu yazınız.
+        function alan_cevre(uzun,kisa){
+            var alan=uzun*kisa;
+            var cevre=uzun*2+kisa*2;
+            // console.log(alan,cevre);
+            return `alan: ${alan} çevre: ${cevre}`;
+        }
+        // alan_cevre(23,45);
+        let sonuc=alan_cevre(2,45);
+        console.log(sonuc);
+
+        // 3- Yazı tura uygulamasını fonksiyon kullanarak yapınız.
+        function randomSayi(){
+            let random=Math.random();
+            console.log(random);
+        }
+        randomSayi(5);
+
+    </script>
+</body>
+</html>

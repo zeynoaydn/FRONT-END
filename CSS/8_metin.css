@@ -1,0 +1,14 @@
+.special-text{
+    color: rgb(192, 84, 84);
+    /* text-align: justify; */
+    text-indent: 50px; /*paragraf başını 50px verdik*/
+    direction: rtl;/*sola hizaladı*/
+}
+h2{
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 2px 2px 2px plum;
+}
+a:hover{
+    text-transform: uppercase;
+}

@@ -1,0 +1,34 @@
+ /* [class |="header"]{
+    background-color: antiquewhite;
+    color: blue;
+ } 
+ /* ilk kelimesi header olan ve başka bir şeyle birleşmemiş olanları kapsar */
+ 
+ /* [class ^="header"]{
+    background-color: burlywood;
+    color: darkred;
+ } */
+ /* ilk paraemtresi header olan içinde header geçen hepsini kapsar*/
+ /* * işareti kullanılırsa hepsini kapsar */
+ 
+ .gallery{
+    margin: 7px;
+    border: 1px solid rgb(187, 185, 185);
+    float: left;
+    width:300;
+    height:150;
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.gallery img{
+    width: 100%;
+
+}
+.gallery:hover{
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}

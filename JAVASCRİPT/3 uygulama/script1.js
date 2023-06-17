@@ -1,0 +1,14 @@
+var ad="zeynep aydın";
+var ogr='1234';
+var cinsiyet="true";
+var ders="tarih";
+var not1=40;
+var not2=50;
+var ort=(not1+not2)/2;
+console.log(ogr+"numaralı"+ad+"isimli öğrencinin"+ders+"dersinden ilk notu"+not1+"ikinci notu"+not2+" ortlaması ise"+ort+"dir");
+var yas=prompt("yaşını gir:");
+console.log(yas);
+var sayi=prompt("değer1 gir:");
+var sayi2=prompt("değer2 gir:");
+var ortalama=(Number(sayi)+Number(sayi2))/2;
+console.log("ortalama:"+ortalama);

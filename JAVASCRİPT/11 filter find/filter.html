@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- koşula uygun tüm elemanları buluyor -->
+    <script>
+        const numbers=[12,3,4,5,626,13,67,24,3,5,2,8,4,6346];
+        // const result=numbers.filter(function(number){
+        //     return number>10;
+        // });
+        const result=numbers.filter(number=>number>10);
+        console.log(result);
+
+        const names=['zeynep','bihter','yagmur','canan','elvan','alper','ali','eda','nezaket'];
+        console.log(names.filter(name=>name.length<=4));
+        console.log(names.filter(str=>str.includes('e','t')));
+        
+        const users=[
+            {
+            'name':'zeynep',
+            'age':22,
+            },
+            {
+            'name':'yagmur',
+            'age':15,
+            },
+            {
+            'name':'bihter',
+            'age':9,
+            },
+            {
+            'name':'nezaket',
+            'age':22,
+            }
+        ];
+        console.log(users.filter(user=>user.age==22));
+
+    </script>
+</body>
+</html>

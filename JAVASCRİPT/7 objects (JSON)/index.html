@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let usera={
+            "name":"zeynep",
+            "lastName":"aydın",
+            "yas":22,
+            "adres":{
+                "sehir":"ankara",
+                "ilce":"cankaya",
+            },
+            "hobiler":["sinema","spor"]
+        }
+
+        let sonuc;
+        sonuc=usera.name;
+        sonuc=usera["yas"];
+        sonuc=usera.adres.ilce;
+        sonuc=usera.hobiler[0];
+
+        let userb={
+            "name":"zeynep",
+            "lastName":"aydın",
+            "yas":22,
+            "adres":{
+                "sehir":"ankara",
+                "ilce":"cankaya",
+            },
+            "hobiler":["sinema","spor"]
+        }
+
+        let kullanicilar=[usera,userb];
+        console.log(kullanicilar[0]);
+        console.log(sonuc);
+</script>
+</body>
+</html>

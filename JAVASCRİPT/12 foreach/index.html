@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var index=0;
+        const products=["laptop","mouse","kanepe","televizyon","telefon","parfüm","ayna"];
+        products.forEach(product =>console.log(product));
+        products.forEach((product2,index) =>console.log(product2,index));
+        products.forEach((product3,index,array) =>console.log(product3,index,array));
+        products.forEach((product3,index,array) =>console.log(array[index]=="telefon"));
+        products.forEach(product4 =>console.log(product4.includes('l')));
+        console.log(products.forEach(product5 =>console.log(product5.includes('l'))));
+
+        const cars=["a","b","c","d","f","g","h"];
+        cars.forEach(function(item){
+            console.log(item);
+        });
+
+        let people=[
+            { name:'zeynep',lastname:'aydın'},
+            { name:'bihter',lastname:'uysal'},
+            { name:'yagmur',lastname:'uysal'},
+        ];
+        for(let i of people){
+            console.log(i);
+        };
+        people.forEach(function(items){
+            console.log(items);
+        });
+        let val=people.map(function(value){
+            return value.name+' '+value.lastname;
+        });
+
+        let num=[1,2,3,4,5];
+        let numload=num.map(function(n){
+            return n*n;
+        })
+        console.log(num);
+        console.log(numload);
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.image{
+    /*background-image: url(images/indir.jfif);
+    width: 300px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed; */
+    background: #C6BBBB url(images/indir.jfif) no-repeat right top fixed;
+    width: 150px;
+    height: 150x;
+}

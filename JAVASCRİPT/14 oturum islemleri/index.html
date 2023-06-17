@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        session storage=tarayıcı kapatıldığında veriler siliniyor
+        local storage=tarayıcı kapatıldığında bile veriler silinmiyor
+        verileri silmek için clear yapmak gerekiyor
+     -->
+    <script>
+        //getItem()=verileri çeker
+        //setItem()=çekilen veriler üzerinde değişiklik yapar
+        //oturum oluşturmak  için setItem kullanılır
+        localStorage.setItem("isim","zeynep");
+        localStorage.setItem("soyad","aydın");
+        // localStorage.setItem("yaş","22");
+        //yorum satırında bile olsa yaş bilgisi tarayıcıda bulunmkatadır
+        
+        localStorage.clear(); //tüm verileri temizledik
+
+        sessionStorage.setItem("isim","bihter");
+        sessionStorage.setItem("yaş","9");
+        sessionStorage.removeItem("yaş");
+        sessionStorage.setItem("soyad","uysal");
+
+        let names=["zeynep","bihter","yağmur"];
+        sessionStorage.setItem("names",names);
+        let value=sessionStorage.getItem("names");
+        console.log(value);
+
+        let names2=["zeynep","bihter","yağmur"];
+        sessionStorage.setItem("names2",JSON.stringify(names2));
+        let value2=JSON.parse(sessionStorage.getItem("names2"));
+        // console.log(value2);
+        value2.forEach(element => {
+            console.log(element);
+        });
+
+        
+    </script>
+</body>
+</html>

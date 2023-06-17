@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let urunler=["iphone","samsung","oppo"];
+        let fiyatlar=[324,42354,342];
+        let renkler=["mavi","kırmızı","gold"];
+
+        let urun1=["iphone a",2242,"red"];
+        let urun12=["iphone a",2242,["mavi","kırmızı","gold"]];
+        console.log(urun12[2][1]);
+
+        console.log(urunler);
+        console.log(fiyatlar);
+
+        console.log(urunler[2]);
+
+        console.log(`${urunler[0]}~${fiyatlar[0]}~${renkler[0]}`);
+        console.log(`${urunler[1]}~${fiyatlar[1]}~${renkler[1]}`);
+        console.log(`${urunler[2]}~${fiyatlar[2]}~${renkler[2]}`);
+        
+        console.log(urunler[0]+"marka telefonun fiyatı "+"$"+fiyatlar[1]+" dir");
+</script>
+</body>
+</html>

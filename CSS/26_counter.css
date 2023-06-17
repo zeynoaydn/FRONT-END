@@ -1,0 +1,24 @@
+/* h3{
+    counter-reset: section;
+    font-size: 24px;
+}
+
+h4::before{
+    counter-increment: section;
+    content: counter(section)'.';
+} */
+
+body{
+    counter-reset: section;
+}
+h3{
+    counter-reset: subsection;
+}
+h4::before{
+    counter-increment: subsection;
+    content: counter(subsection)'.';
+}
+h3::before{
+    counter-increment: section;
+    content: counter(section)'.';
+} 

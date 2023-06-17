@@ -1,0 +1,22 @@
+h2{
+    text-align: center;
+}
+.special-font::before{
+    content:'Not:';
+}
+.goOn::after{
+    content: '.....';
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding: 6px;
+}
+.pseudo::before{
+    content: url(images/people.png);
+}
+.pseudo::selection{
+    color: plum;
+    background-color: blanchedalmond;
+}

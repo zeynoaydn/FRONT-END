@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li{
+    float: left;
+    border-right: 1px solid #555;
+}
+li:last-child{
+    border-right: none;
+}
+li a,.dp-btn{
+    color: white;
+    padding: 16px 10px;
+    display: block;
+    /* display:inline-block yaparsan yan yana gelir */
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+a.active{
+    background-color: darkred;
+}
+li a:hover,.dropdown:hover .dp-btn{
+    background-color: #111;
+}
+div{
+    padding: 20px;
+    margin-top: 50px;
+}
+@media screen and (max-width:500px) {
+    ul li{
+        float: none;
+    }
+}
+.dp-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    padding: 0;
+}
+.dropdown:hover .dp-content{
+    /* display: contents; */
+    display: block;
+}
+.dp-content a:hover{
+    background-color: darkred;
+} 
+/* .dropdown:hover .dp-content{
+    display: block;
+} */
+/* .dp-content a:hover{
+    background-color: darkred;
+} */

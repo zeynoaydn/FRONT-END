@@ -1,0 +1,11 @@
+span{
+    border: 2px solid red;
+    margin: 20px;
+    display: inline;/*içerik ne kadar ise o  kadar yer tutuyor*/
+}
+ul{
+    list-style-type: none;
+}
+ul>li{
+    display: inline;
+}

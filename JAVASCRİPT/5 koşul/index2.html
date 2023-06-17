@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // bir sayının 10-50 arasında olup olmadığını kontrol et
+        var sayi=prompt("bir sayı giriniz");
+        if (sayi<=50 && sayi>=10)
+        {
+            console.log("sayı 10-50 arasında");
+        }
+        else{
+            console.log("sayı 10-50 arasında değil");
+        }
+        //bir sayının pozitif tek sayı olup olmadığını kontrol et
+        var sayi2=prompt("tekrar bir sayı giriniz");
+        if(sayi2%2!=0 && sayi2>0){
+            console.log("sayı pozitif ve tek");
+        }
+        else{
+            console.log("false");
+        }
+        //x,y,z karşılaştır
+        var x=prompt("x sayısı için değer gir:");
+        var y=prompt("y sayısı için değer gir:");
+        var z=prompt("z sayısı için değer gir:");
+        if(x>z && x>y){}
+        //2 vize 1 final notu hesapla
+        var vize1=prompt("1. vize notunu gir:");
+        var vize2=prompt("2. vize notunu gir:");
+        var final=prompt("final notunu gir:");
+        var ort=(vize1*0.4+vize2*0.4+final*0.6)/3;
+        if(final<50){
+            console.log("final 50 den düşük o yüzden kaldın");
+        }
+        else
+        {
+            if(ort<50){
+                if(final>70){
+                    console.log("ortalama düşük olmasına rağmen finalden dolayı geçtin");
+                }
+                else{
+                    console.log("dersten geçtin");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

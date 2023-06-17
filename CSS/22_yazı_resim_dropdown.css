@@ -1,0 +1,17 @@
+.dropDown{
+    position: relative;
+    display: inline-block;
+}
+.content{
+    position: absolute;
+    z-index: 1;
+    background-color: antiquewhite;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid rgb(184, 181, 181);
+    box-shadow: 0 8px 16px 0 #bbb;
+    display: none;
+}
+.dropDown:hover .content{
+    display: block;
+}
